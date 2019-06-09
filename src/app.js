@@ -14,12 +14,11 @@ const store = configureStore();
 
 
 
-store.dispatch(addExpense({description:'Rent bill',amount:1300}))
-store.dispatch(addExpense({description:'DJ Equipment',amount:1200,note:'This is cool stuff'}))
-store.dispatch(addExpense({description:'Water bill',amount:60}))
-store.dispatch(addExpense({description:'Phone bill',amount:20}))
-store.dispatch(addExpense({description:'Gas bill',amount:80,createdAt:3000}))
-store.dispatch(setSortToggle())
+// store.dispatch(addExpense({description:'Rent bill',amount:1300}))
+// store.dispatch(addExpense({description:'DJ Equipment',amount:1200,note:'This is cool stuff'}))
+// store.dispatch(addExpense({description:'Water bill',amount:60}))
+// store.dispatch(addExpense({description:'Phone bill',amount:20}))
+// store.dispatch(addExpense({description:'Gas bill',amount:80,createdAt:3000}))
 
 
 console.log(store.getState())
