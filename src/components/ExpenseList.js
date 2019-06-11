@@ -8,7 +8,9 @@ import {Link} from 'react-router-dom'
 
 const ExpenseList = (props) => (
     <div>
+
     <h1>Expense List</h1>
+    {props.expenses.length > 0 ?
     <table>
     <tbody>
     <tr>
@@ -33,7 +35,7 @@ const ExpenseList = (props) => (
     (<ExpenseListItem key={expense.id} referenceNumber={index} {...expense}/>))}
     </tbody>
     </table>
-
+    :<p>No Expenses</p>}
     <button><Link to='/create'>Add Expense</Link></button>
  
     </div>
